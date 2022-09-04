@@ -1,4 +1,5 @@
 import React from 'react'
+import GalleryItemComp from './GalleryItem';
 
 function GalleryList({galleryItems}){
     return (
@@ -10,8 +11,9 @@ function GalleryList({galleryItems}){
                 galleryItems.map((galleryItems) => {
                     console.log(galleryItems);
                     return <li key={galleryItems.id}>
-                        <img src={galleryItems.path}></img> 
-                        {galleryItems.description}
+                        <GalleryItemComp
+                        galleryItems={galleryItems}
+                        />
                         <br />
                         likes: {galleryItems.likes}  
                     </li>

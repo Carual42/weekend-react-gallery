@@ -14,5 +14,5 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 [x]-get server running
 [x]- axios GET request from /gallery to store in app.jsx
 [x]- new component for GalleryList that .maps gallery data
-[]- make GalleryItems
-[]- new component GalleryItem.jsx (pass in )
+[x]- make GalleryItems
+[]- new component GalleryItem.jsx (pass to GalleryList ) that adds toggle capabilities
