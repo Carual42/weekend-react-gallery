@@ -12,7 +12,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 [x]- add title and description to images (fix paths)
 [x]- get nodemon working
 [x]-get server running
-[]- axios GET request from /gallery to store in app.jsx
-[]- new component for GalleryList that .maps gallery data
+[x]- axios GET request from /gallery to store in app.jsx
+[x]- new component for GalleryList that .maps gallery data
 []- make GalleryItems
 []- new component GalleryItem.jsx (pass in )
