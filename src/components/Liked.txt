@@ -1,0 +1,12 @@
+import React, { useState } from 'react'
+
+function Liked({likePic}){
+    return (
+    <div>
+       <button onClick={likePic}>
+Like
+</button>
+      </div>
+    )
+}
+ export default Liked;

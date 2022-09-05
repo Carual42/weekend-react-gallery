@@ -15,4 +15,6 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 [x]- axios GET request from /gallery to store in app.jsx
 [x]- new component for GalleryList that .maps gallery data
 [x]- make GalleryItems
-[]- new component GalleryItem.jsx (pass to GalleryList ) that adds toggle capabilities
+[x]- new component GalleryItem.jsx (pass to GalleryList ) that adds toggle capabilities
+[x]- add like button to GalleryItem.jsx
+[]- get like button to work 

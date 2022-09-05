@@ -4,8 +4,6 @@ import axios from 'axios';
 import './App.css';
 import GalleryList from '../GalleryList';
 
-
-
 function App() {
   const [galleryItems, setGalleryItems] = useState([]);
 
@@ -20,6 +18,16 @@ const fetchGallery = () => {
     setGalleryItems(response.data)
   }).catch(error => {
     alert('error in fetchGallery');
+    console.log(error);
+  })
+}
+
+const likePic = () => {
+  axios.put('/gallary/like/:id')
+  .then(response => {
+    fetchGallery()
+  }).catch(error => {
+    alert('error in likeBtn');
     console.log(error);
   })
 }

@@ -14,6 +14,9 @@ function GalleryItemComp({galleryItems}){
        <button onClick={() => setToggle(!toggle)}>
         {toggle ? 'Description' : 'View Image'}
        </button>
+       <button>
+Like
+</button>
       </div>
       )
 }

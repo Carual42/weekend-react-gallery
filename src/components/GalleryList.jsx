@@ -15,7 +15,7 @@ function GalleryList({galleryItems}){
                         galleryItems={galleryItems}
                         />
                         <br />
-                        likes: {galleryItems.likes}  
+                        likes: {galleryItems.likes}
                     </li>
                 })
             }
