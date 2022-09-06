@@ -1,21 +1,22 @@
 import React from 'react'
 import GalleryItemComp from './GalleryItem';
 
-function GalleryList({galleryItems}){
+function GalleryList({galleryItems, likePic}){
     return (
       <div>
         <p>Gallery goes here</p>
         <br />
         <ul>
             {
-                galleryItems.map((galleryItems) => {
-                    console.log(galleryItems);
-                    return <li key={galleryItems.id}>
+                galleryItems.map((item) => {
+                    console.log(item);
+                    return <li key={item.id}>
                         <GalleryItemComp
-                        galleryItems={galleryItems}
+                        photo={item}
+                        likePic={likePic}
                         />
                         <br />
-                        likes: {galleryItems.likes}
+                        likes: {item.likes}
                     </li>
                 })
             }

@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
 
-function GalleryItemComp({galleryItems}){
+function GalleryItemComp({photo, likePic}){
     const [toggle, setToggle] = useState(false); 
     return (
       <div>
        {toggle ? (
-        <img src={galleryItems.path}></img>
+        <img src={photo.path}></img>
        ) : (
         <h3>
-  {galleryItems.description}
+  {photo.description}
         </h3>
        )}
        <button onClick={() => setToggle(!toggle)}>
         {toggle ? 'Description' : 'View Image'}
        </button>
-       <button>
+       <button onClick={() => likePic(photo.id)}>
 Like
 </button>
       </div>

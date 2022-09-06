@@ -22,12 +22,12 @@ const fetchGallery = () => {
   })
 }
 
-const likePic = () => {
-  axios.put('/gallary/like/:id')
+const likePic = (photoId) => {
+  axios.put(`/gallery/like/${photoId}`)
   .then(response => {
     fetchGallery()
   }).catch(error => {
-    alert('error in likeBtn');
+    alert('error in likePic');
     console.log(error);
   })
 }
@@ -39,6 +39,7 @@ const likePic = () => {
         </header>
         <GalleryList
         galleryItems={galleryItems}
+        likePic={likePic}
         />
       </div>
     );
